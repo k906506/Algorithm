@@ -43,7 +43,6 @@ def main():
         srt, dst, distance = input().split()
         distance = int(distance)
         node_dict[srt].append([dst, distance]) # ex) A, B, 10인 경우 A = [B, 10]과 같은 형태로 저장
-        node_dict[dst].append([srt, distance]) # 무방향 그래프 (방향 그래프일 경우 해당 코드 불필요)
     
     start = input() # 시작 정점
     print(dijkstra(start, node_dict, node))
