@@ -8,7 +8,7 @@ def bellManFord(n, m, node_dict, node, start):
     
     distance[start] = 0
 
-    for _ in range(m-1): # 총 m-1번 반복
+    for _ in range(n-1): # 총 n-1번 반복
         for element in node_dict:
             for v, d in node_dict[element]:
                 if distance[v] > distance[element] + d:
